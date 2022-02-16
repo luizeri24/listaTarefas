@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Lista de Tarefas</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>TAREFAS DIA A DIA</h1>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <h2 class="subtitulo">MINHAS TAREFAS</h2>
+      <table>
+        <thead class="">
+          <tr>
+            <th>Tarefa</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Prioridade</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-tarefas">
+          <tr>
+            <td>Reunião</td>
+            <td>15/03/2022</td>
+            <td>09:00</td>
+            <td class="alta">Alta</td>
+          </tr>
+
+          <tr>
+            <td>Estudar</td>
+            <td>16/03/2022</td>
+            <td>12:00</td>
+            <td class="moderado">moderado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="container">
+      <h2 class="subtitulo">Adicionar nova tarefa</h2>
+      <form id="adicionar-tarefa">
+        <div class="form-tarefas">
+          <label for="tarefa">Tarefa</label>
+          <input id="tarefa" name="tarefa" type="text" placeholder="Digite sua tarefa: " class="campo">
+        </div>
+        <div class="form-tarefas">
+          <label for="data">Data: </label>
+          <input id="data" name="data" type="text" placeholder="Exemplo: XX/XX/XX " class="campo">
+        </div>
+        <div class="form-tarefas">
+          <label for="hora">Hora: </label>
+          <input id="hora" name="hora" type="text" placeholder="Hora: XX:XX" class="campo">
+        </div>
+        <div class="form-tarefas">
+          <label for="prioridade">Proridade</label>
+          <input id="prioridade" name="prioridade" type="text" placeholder="Digite sua a prioridade da sua tarefa: " class="campo">
+        </div>
+        <button id="add-tarefa" class="adicionar-tarefa">Adicionar</button>
+      </form>
+    </section>
+  </main>
+  <script src="/index.js"></script>
+</body>
+
+</html>
